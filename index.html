@@ -43,7 +43,7 @@
 		<section class="itemblock">
 			<p id="date">Date:</p>
 			<p id="time">Time:</p>
-			<p> Surgery opening <br>hours are 8am-6pm.</p>
+			<p> Surgery opening <br>hours are 8am-6pm.<br>Monday-Friday.</p>
 		</section>
 	</header>
 	<article>
@@ -140,13 +140,29 @@
 
 	const padTo2DigitsWithZeros = (x) => x < 10 ? `0${x}` : `${x}`;
 
+	const ukTimeFormatString = new Intl.DateTimeFormat('en-GB', {
+		timeZone: 'Europe/London',
+		hour: '2-digit',
+		minute: '2-digit',
+		second: '2-digit',
+	});
+
+	const ukDateFormatString = new Intl.DateTimeFormat('en-GB', {
+		timeZone: 'Europe/London',
+		year: 'numeric',
+		month: '2-digit',
+		day: '2-digit',
+	});
+
+	const ukWeekdayFormatString = new Intl.DateTimeFormat('en-GB', {
+		timeZone: 'Europe/London',
+		weekday: 'long',
+	});
+
 	function CurrTimeCounter() {
 		const now = new Date();
-		document.getElementById("date").innerHTML =
-			`Date: ${padTo2DigitsWithZeros(now.getDate())}.${padTo2DigitsWithZeros(now.getMonth() + 1)}.${now.getFullYear()}`;
-
-		document.getElementById("time").innerHTML =
-			`Time: ${padTo2DigitsWithZeros(now.getHours())}:${padTo2DigitsWithZeros(now.getMinutes())}:${padTo2DigitsWithZeros(now.getSeconds())}`;
+		document.getElementById("date").innerHTML = `Today is ${ukWeekdayFormatString.format(now)}<br>${ukDateFormatString.format(now)}`;
+		document.getElementById("time").innerHTML = `Time: ${ukTimeFormatString.format(now)}`;
 	}
 
 </script>
