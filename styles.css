@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow');
+
+:root  { 
+    --root-font-family: Barlow, Arial, Helvetica, sans-serif;
+    --root-font-colour: blue;
+
+    --header-font-family: var(--root-font-family);
+    --header-bg-color: blue;
+
+    --header-nav-bg-color: grey;
+
+    --header-font-colour: yellow;
+
+    --header-preferences_bg-color: lightpink;
+    --header-preferences-font: var(--root-font-family);
+
+    --header-h1-bg-color: var(--header-bg-color);
+    --header-h1-font-color: var(--header-font-colour);
+    --header-h1-font: var(--header-font-family);
+    --header-h1-font-size: 4rem;
+
+    --header-h2-bg-color: var(--header-bg-color);
+    --header-h2-font-color: var(--header-font-colour);
+    --header-h2-font: var(--header-font-family);
+    --header-h2-font-size: string("2.5rem");
+};
+
+
+
+body {
+    font-family: var(--root-font-family);
+    font-size: 1rem;
+    line-height: 1.6;
+    color:black;
+    background-color: rosybrown;
+    width: 100%;
+    box-sizing: border-box;
+    display:block;
+    
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    background-image: url('./surgery.png');
+}
+
+#covid {
+    width: 50%;
+}
+
+
+a {
+    font-family: var(--root-font-family);
+}
+
+nav {
+    color: var(--header-font-colour);
+    display: flex;
+    list-style-type: none;
+    white-space: nowrap;
+    justify-content: flex-start;
+    flex-wrap: row wrap;
+    background-color: var(--header-nav-bg-color);
+    padding:0;
+    margin:0;
+    column-gap: 1rem;
+    max-width: 200px;
+}
+
+h1 {
+    font-family: var(--root-font-family);
+}
+
+h2 {
+    font-family: var(--root-font-family);
+}
+
+p {
+    font-family: var(--root-font-family);
+}
+
+#surgeryImg {
+    width: 30%;
+}

@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<html>
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tech Returners Surgery: Home</title>
+	<link rel="stylesheet" href="normalise.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
 	<header>
 		<address>
 			<a href="#">Tech Returners Surgery</a>
@@ -37,7 +36,7 @@
 		</form>
 
 
-		<section>
+		<section id="covid">
 			<h2>COVID Restriction Update</h2>
 
 			<p>Throughout the pandemic we have strove to make the surgery as safe as possible for all our patients and
@@ -53,77 +52,76 @@
 		</section>
 	</header>
 
-	<body>
-		<h1>Welcome to the Tech Returners Surgery!</h1>
+	<h1>Welcome to the Tech Returners Surgery!</h1>
 
-		<img src="./surgery.png" alt="The Tech Returners Surgery, 115 Mancunian Way, Manchester, M20 3PX">
-		</img>
+	<!-- <img id="surgeryImg" src="./surgery.png"
+		alt="The Tech Returners Surgery, 115 Mancunian Way, Manchester, M20 3PX"> -->
 
-		<section>
-			<h2>How to use Ask My Doc?</h2>
+	<section>
+		<h2>How to use Ask My Doc?</h2>
 
-			<video controls width="250">
-				<source src="#" type="video/webm">
-				<source src="#" type="video/mp4">
-				<track kind="captions" srclang="en" src="./ask_my_doc_transcript.vtt" default />
+		<video controls width="250">
+			<source src="#" type="video/webm">
+			<source src="#" type="video/mp4">
+			<track kind="captions" srclang="en" src="./ask_my_doc_transcript.vtt" default>
 
-				Sorry, your browser doesn't support embedded videos.
-			</video>
-		</section>
-
-
-		<section>
-			<h2>Need advice or have some feedback for us?</h2>
-
-			<form>
-				<fieldset>
-					<legend>Send us a message by filling out the form below and one of our Receptionists will be in
-						touch:
-					</legend>
-
-					<p>Are you completing this form on behalf of: </p>
-
-					<label for="self">Yourself </label>
-					<input type="checkbox" id="self" name="self">
-
-					<label for="another">Someone else </label>
-					<input type="checkbox" id="another" name="another">
+			Sorry, your browser doesn't support embedded videos.
+		</video>
+	</section>
 
 
-					<div>
-						<label for="fname">First Name </label>
-						<input type="text" id="fname" name="fname" required>
-					</div>
+	<section>
+		<h2>Need advice or have some feedback for us?</h2>
 
-					<div>
-						<label for="lname">Last Name </label>
-						<input type="text" id="lname" name="lname" required>
-					</div>
+		<form>
+			<fieldset>
+				<legend>Send us a message by filling out the form below and one of our Receptionists will be in
+					touch:
+				</legend>
 
-					<div>
-						<label for="dob">Date of Birth </label>
-						<input type="date" id="dob" name="dob" required>
-					</div>
+				<p>Are you completing this form on behalf of: </p>
 
-					<div>
-						<label for="telephone">Telephone Number: </label>
-						<input type="tel" id="telephone" name="telephone" required>
-					</div>
+				<label for="self">Yourself </label>
+				<input type="checkbox" id="self" name="self">
 
-					<div>
-						<label for="email">Email: </label>
-						<input type="email" id="email" name="email" required>
-					</div>
+				<label for="another">Someone else </label>
+				<input type="checkbox" id="another" name="another">
 
-					<div>
-						<label for="message">Your query or message: </label>
-						<input type="text" id="message" name="message" required>
-					</div>
 
-					<input type="submit" value="Submit">
-				</fieldset>
-			</form>
-		</section>
-	</body>
+				<div>
+					<label for="fname">First Name </label>
+					<input type="text" id="fname" name="fname" required>
+				</div>
+
+				<div>
+					<label for="lname">Last Name </label>
+					<input type="text" id="lname" name="lname" required>
+				</div>
+
+				<div>
+					<label for="dob">Date of Birth </label>
+					<input type="date" id="dob" name="dob" required>
+				</div>
+
+				<div>
+					<label for="telephone">Telephone Number: </label>
+					<input type="tel" id="telephone" name="telephone" required>
+				</div>
+
+				<div>
+					<label for="email">Email: </label>
+					<input type="email" id="email" name="email" required>
+				</div>
+
+				<div>
+					<label for="message">Your query or message: </label>
+					<input type="text" id="message" name="message" required>
+				</div>
+
+				<input type="submit" value="Submit">
+			</fieldset>
+		</form>
+	</section>
+</body>
 
 </html>
