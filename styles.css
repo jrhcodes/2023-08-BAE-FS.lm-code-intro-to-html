@@ -32,28 +32,72 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     color:black;
-    background-color: rosybrown;
     width: 100%;
     box-sizing: border-box;
     display:block;
+
     
 }
 
-header {
+header, footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    background-image: url('./surgery.png');
+    background-color:cadetblue;
+    font-family: var(--root-font-family);
+    font-size: 1rem;
+    line-height: 1.6;
+    color:black;
+
+}
+
+#searchbox {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.itemblock {
+    background-color: rgba(136, 237, 255, 0.377);
+    margin: 10px;
+    padding: 10px;
 }
 
 #covid {
-    width: 50%;
+    width: 60%;
 }
 
-
-a {
-    font-family: var(--root-font-family);
+section > video {
+    width: 100%;
 }
+
+article {
+    overflow: hidden;
+    position: relative;
+}
+
+article > section {
+    width: 10%;
+}
+
+#content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+#bg-image {
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+#content {
+    position: relative;
+
 
 nav {
     color: var(--header-font-colour);
@@ -69,18 +113,7 @@ nav {
     max-width: 200px;
 }
 
-h1 {
+h1, h2, label, a, p {
     font-family: var(--root-font-family);
-}
-
-h2 {
-    font-family: var(--root-font-family);
-}
-
-p {
-    font-family: var(--root-font-family);
-}
-
-#surgeryImg {
-    width: 30%;
+    background
 }
