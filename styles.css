@@ -48,7 +48,6 @@ header, footer {
     font-size: 1rem;
     line-height: 1.6;
     color:black;
-
 }
 
 #searchbox {
@@ -98,7 +97,7 @@ article > section {
 #content {
     position: relative;
 
-
+}
 nav {
     color: var(--header-font-colour);
     display: flex;
@@ -113,7 +112,6 @@ nav {
     max-width: 200px;
 }
 
-h1, h2, label, a, p {
+h1, h2, label, a, p, fieldset, form {
     font-family: var(--root-font-family);
-    background
 }

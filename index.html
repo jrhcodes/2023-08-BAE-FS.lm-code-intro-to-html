@@ -31,27 +31,24 @@
 
 		<section id="covid" class="itemblock">
 			<h2>COVID Restriction Update</h2>
-
 			<p>Throughout the pandemic we have strove to make the surgery as safe as possible for all our patients
-				and
-				staff, we will continue to do so.</p>
-
+				and staff, we will continue to do so.</p>
 			<p>From the <strong>19th July 2021 nothing will change at the Surgery</strong> Patients will <em>still
-					need</em> to
-				wear a mask, socially distance and use hand sanitiser in the surgery and staff will continue to
+					need</em> to wear a mask, socially distance and use hand sanitiser in the surgery and staff will
+				continue to
 				wear PPE.
 			</p>
-
 			<p>If you arrive without a mask and are not exempt, you will be asked to leave.</p>
+		</section>
+		<section class="itemblock">
+			<p id="date">Date:</p>
+			<p id="time">Time:</p>
+			<p> Surgery opening <br>hours are 8am-6pm.</p>
 		</section>
 	</header>
 	<article>
 		<img id="bg-image" src="./surgery.png" />
 		<div id="content">
-
-
-			<!-- <img id="surgeryImg" src="./surgery.png"
-		alt="The Tech Returners Surgery, 115 Mancunian Way, Manchester, M20 3PX"> -->
 
 			<section class="itemblock">
 				<h1>Welcome to the Tech Returners Surgery!</h1>
@@ -137,3 +134,19 @@
 </body>
 
 </html>
+
+<script>
+	setInterval(CurrTimeCounter, 1000);
+
+	const padTo2DigitsWithZeros = (x) => x < 10 ? `0${x}` : `${x}`;
+
+	function CurrTimeCounter() {
+		const now = new Date();
+		document.getElementById("date").innerHTML =
+			`Date: ${padTo2DigitsWithZeros(now.getDate())}.${padTo2DigitsWithZeros(now.getMonth() + 1)}.${now.getFullYear()}`;
+
+		document.getElementById("time").innerHTML =
+			`Time: ${padTo2DigitsWithZeros(now.getHours())}:${padTo2DigitsWithZeros(now.getMinutes())}:${padTo2DigitsWithZeros(now.getSeconds())}`;
+	}
+
+</script>
